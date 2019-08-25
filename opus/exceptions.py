@@ -7,4 +7,4 @@ class OpusError(Exception):
         self.code = code
 
     def __str__(self):
-        return strerror(self.code)
+        return strerror(self.code).decode()
